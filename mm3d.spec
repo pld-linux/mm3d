@@ -9,7 +9,7 @@ License:	- GPL
 #Vendor:		-
 #Icon:		-
 Source0:	http://dl.sourceforge.net/misfitmodel3d/%{name}-%{version}.tar.gz
-# Source0-md5:	-
+#Source0-md5:	2fd1bc082951bcbb9e3fcfde21c5ad18
 #Source1:	-
 # Source1-md5:	-
 #Patch0:		%{name}-what.patch
