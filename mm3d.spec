@@ -14,7 +14,7 @@ Source0:	http://dl.sourceforge.net/misfitmodel3d/%{name}-%{version}.tar.gz
 # Source1-md5:	-
 #Patch0:		%{name}-what.patch
 #URL:		-
-#BuildRequires:	-
+BuildRequires:	qt-devel >= 3.3.3-4
 #PreReq:		-
 #Requires(pre,post):	-
 #Requires(preun):	-
