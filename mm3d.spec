@@ -1,15 +1,15 @@
-Summary:	- Misfit Model 3D
-Summary(pl):	- Misfit Model 3D
-Name:		- mm3d
-Version:	- 1.0.0
-Release:	- 0
-Epoch:		- 0
-License:	- GPL
-#Group:		-
+Summary:	Misfit Model 3D
+Summary(pl):	Misfit Model 3D
+Name:		mm3d
+Version:	1.0.0
+Release:	0
+Epoch:		0
+License:	GPL
+Group:		X11/Graphics
 #Vendor:		-
 #Icon:		-
 Source0:	http://dl.sourceforge.net/misfitmodel3d/%{name}-%{version}.tar.gz
-#Source0-md5:	2fd1bc082951bcbb9e3fcfde21c5ad18
+# Source0-md5:	2fd1bc082951bcbb9e3fcfde21c5ad18
 #Source1:	-
 # Source1-md5:	-
 #Patch0:		%{name}-what.patch
@@ -29,18 +29,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description -l pl
 
-%package subpackage
-Summary:	-
-Summary(pl):	-
-Group:		-
+#%package subpackage
+#Summary:	-
+#Summary(pl):	-
+#Group:		-
 
-%description subpackage
+#%description subpackage
 
-%description subpackage -l pl
+#%description subpackage -l pl
 
 %prep
-%setup -q -n %{name}-%{version}.orig -a 1
-%patch0 -p1
+#%setup -q -n %{name}-%{version}.orig -a 1
+#%patch0 -p1
 
 %build
 # if ac/am/* rebuilding is necessary, do it in this order and add
@@ -78,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 
-%files subpackage
-%defattr(644,root,root,755)
-%doc extras/*.gz
-%{_datadir}/%{name}-ext
+#%files subpackage
+#%defattr(644,root,root,755)
+#%doc extras/*.gz
+#%{_datadir}/%{name}-ext
