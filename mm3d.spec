@@ -59,7 +59,9 @@ rm -rf $RPM_BUILD_ROOT
 #install -d $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	datadir=$RPM_BUILD_ROOT%{_datadir} \
+	DOCDIR=$RPM_BUILD_ROOT%{_datadir}/doc/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -74,9 +76,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
+#%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
+%{_datadir}/doc/%{name}-%{version}
 
 #%files subpackage
 #%defattr(644,root,root,755)
