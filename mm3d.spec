@@ -39,7 +39,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 #%description subpackage -l pl
 
 %prep
-#%setup -q -n %{name}-%{version}.orig -a 1
+%setup -q
 #%patch0 -p1
 
 %build
@@ -50,7 +50,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 #%%{__autoconf}
 #%%{__autoheader}
 #%%{__automake}
-%configure
+%configure2_13
 %{__make}
 
 %install
