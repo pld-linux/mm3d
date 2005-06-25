@@ -1,14 +1,18 @@
+# TODO:
+# - Ckeck if it requires lua50
+
 Summary:	Misfit Model 3D - OpenGL-based 3D model editor
 Summary(pl):	Misfit Model 3D - oparty o OpenGL edytor modeli 3D
 Name:		mm3d
-Version:	1.0.0
-Release:	0
+Version:	1.1.6
+Release:	1
 Epoch:		0
 License:	GPL
 Group:		X11/Graphics
 Source0:	http://dl.sourceforge.net/misfitmodel3d/%{name}-%{version}.tar.gz
-# Source0-md5:	2fd1bc082951bcbb9e3fcfde21c5ad18
+# Source0-md5:	6b39417e65e2bb9d31ae11092ebd2371
 URL:		http://www.misfitcode.com/misfitmodel3d/
+BuildRequires:	lua50-devel
 BuildRequires:	qt-devel >= 3.3.3-4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,14 +37,16 @@ rozszerzaniu przy pomocy wtyczek i skryptów.
 %setup -q
 
 %build
-%configure2_13
+%configure2_13 \
+        --with-Qt-include-dir=%{_includedir}/qt \
+        --with-Qt-lib-dir=%{_libdir}
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
+	bindir=$RPM_BUILD_ROOT%{_bindir} \
 	datadir=$RPM_BUILD_ROOT%{_datadir} \
 	DOCDIR=$RPM_BUILD_ROOT%{_datadir}/doc/%{name}-%{version}
 
@@ -51,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
-%{_docdir}/%{name}-%{version}
+%{_docdir}/
