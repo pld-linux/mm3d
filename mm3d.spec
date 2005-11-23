@@ -4,13 +4,13 @@
 Summary:	Misfit Model 3D - OpenGL-based 3D model editor
 Summary(pl):	Misfit Model 3D - oparty o OpenGL edytor modeli 3D
 Name:		mm3d
-Version:	1.1.6
+Version:	1.1.10
 Release:	1
 Epoch:		0
 License:	GPL
 Group:		X11/Graphics
 Source0:	http://dl.sourceforge.net/misfitmodel3d/%{name}-%{version}.tar.gz
-# Source0-md5:	6b39417e65e2bb9d31ae11092ebd2371
+# Source0-md5:	920363c114f8dcb1229ba5c90ec646fa
 URL:		http://www.misfitcode.com/misfitmodel3d/
 BuildRequires:	lua50-devel
 BuildRequires:	qt-devel >= 3.3.3-4
