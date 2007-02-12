@@ -2,7 +2,7 @@
 # - Ckeck if it requires lua50
 
 Summary:	Misfit Model 3D - OpenGL-based 3D model editor
-Summary(pl):	Misfit Model 3D - oparty o OpenGL edytor modeli 3D
+Summary(pl.UTF-8):   Misfit Model 3D - oparty o OpenGL edytor modeli 3D
 Name:		mm3d
 Version:	1.1.10
 Release:	1
@@ -24,14 +24,14 @@ processing, and a plugin system for adding new model and image
 filters. Complete online help is included. It is designed to be easy
 to use and easy to extend with plugins and scripts.
 
-%description -l pl
-Misfit Model 3D to oparty o OpenGL edytor modeli trójwymiarowych
-dzia³aj±cy z modelami opartymi na trójk±tach. Obs³uguje wielopoziomowe
+%description -l pl.UTF-8
+Misfit Model 3D to oparty o OpenGL edytor modeli trÃ³jwymiarowych
+dziaÅ‚ajÄ…cy z modelami opartymi na trÃ³jkÄ…tach. ObsÅ‚uguje wielopoziomowe
 undo, animacje szkieletowe, proste teksturowanie, skrypty,
-przetwarzanie wsadowe z linii poleceñ oraz system wtyczek do dodawania
-nowych filtrów modeli i obrazów. Do³±czona jest kompletna pomoc
-online. Edytor jest zaprojektowany z my¶l± o ³atwym u¿ywaniu i
-rozszerzaniu przy pomocy wtyczek i skryptów.
+przetwarzanie wsadowe z linii poleceÅ„ oraz system wtyczek do dodawania
+nowych filtrÃ³w modeli i obrazÃ³w. DoÅ‚Ä…czona jest kompletna pomoc
+online. Edytor jest zaprojektowany z myÅ›lÄ… o Å‚atwym uÅ¼ywaniu i
+rozszerzaniu przy pomocy wtyczek i skryptÃ³w.
 
 %prep
 %setup -q
