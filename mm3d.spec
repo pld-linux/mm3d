@@ -2,7 +2,7 @@
 # - Ckeck if it requires lua50
 
 Summary:	Misfit Model 3D - OpenGL-based 3D model editor
-Summary(pl.UTF-8):   Misfit Model 3D - oparty o OpenGL edytor modeli 3D
+Summary(pl.UTF-8):	Misfit Model 3D - oparty o OpenGL edytor modeli 3D
 Name:		mm3d
 Version:	1.1.10
 Release:	1
