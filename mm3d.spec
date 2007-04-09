@@ -13,7 +13,7 @@ Source0:	http://dl.sourceforge.net/misfitmodel3d/%{name}-%{version}.tar.gz
 # Source0-md5:	920363c114f8dcb1229ba5c90ec646fa
 URL:		http://www.misfitcode.com/misfitmodel3d/
 BuildRequires:	lua50-devel
-BuildRequires:	qt-devel >= 3.3.3-4
+BuildRequires:	qt-devel >= 6:3.3.3-4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
