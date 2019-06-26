@@ -9,8 +9,9 @@ Release:	1
 Epoch:		0
 License:	GPL
 Group:		X11/Graphics
-Source0:	http://dl.sourceforge.net/misfitmodel3d/%{name}-%{version}.tar.gz
+# Source0:	http://dl.sourceforge.net/misfitmodel3d/%{name}-%{version}.tar.gz
 # Source0-md5:	920363c114f8dcb1229ba5c90ec646fa
+Source0:	https://github.com/zturtleman/mm3d/archive/master.zip
 URL:		http://www.misfitcode.com/misfitmodel3d/
 BuildRequires:	lua50-devel
 BuildRequires:	qt-devel >= 6:3.3.3-4
